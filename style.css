@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -10,3 +12,49 @@ body {
     font-size: 1.6rem;
 }
 
+/* Layout */
+
+.breadcrumbscontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.productlist_container {
+    display: grid;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Font Styling */
+
+h1,
+.brandname2,
+.fullspecsbtn {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+.brandname1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.label {
+    font-style: italic;
+}
+
+
+.breadcrumbscontainer,
+h3 {
+    letter-spacing: 0.5rem;
+}
+
+/* Link Styling */
+
+a {
+    text-decoration: none;
+}
