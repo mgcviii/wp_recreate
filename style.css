@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: #F2EFEA;
 }
 
 body {
@@ -23,11 +24,17 @@ body {
 
 .productlist_container {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    justify-content: center;
+    grid-column-gap: 3%;
+    grid-row-gap: 5%;
 }
 
 .productCard {
     display: flex;
     flex-direction: column;
+    background-color: #ffff;
+    padding: 5%;
 }
 
 /* Font Styling */
@@ -57,4 +64,11 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+/* infocontainer styling */
+
+.infowrapper,
+.btn_container {
+    padding: 2%;
 }
