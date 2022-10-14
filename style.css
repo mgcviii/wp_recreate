@@ -13,7 +13,17 @@ body {
     font-size: 1.6rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Layout */
+
+.wrapper {
+    margin-top: 1%;
+    margin-left: 5%;
+}
 
 .breadcrumbscontainer {
     display: flex;
@@ -24,8 +34,8 @@ body {
 
 .productlist_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    /* justify-content: center; */
     grid-column-gap: 3%;
     grid-row-gap: 5%;
 }
@@ -54,7 +64,6 @@ p,
     font-style: italic;
 }
 
-
 .breadcrumbscontainer,
 h3 {
     letter-spacing: 0.5rem;
@@ -66,9 +75,57 @@ a {
     text-decoration: none;
 }
 
-/* infocontainer styling */
+.bcText,
+span {
+    color: #656565;
+}
+
+/*  productcard, infocontainer & infowrapper styling */
+
+.infocontainer {
+    border: rgb(156, 153, 153) 1px solid;
+    padding: 2%;
+}
+
+.brandname2 {
+    font-size: 1.3rem;
+    color: #656565;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+h3 {
+    color: #656565;
+    font-weight: 200;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+/* Giving them the line */
+.infowrapper,
+h3 {
+    border-bottom: rgb(156, 153, 153) 1px solid;
+}
 
 .infowrapper,
 .btn_container {
-    padding: 2%;
+    padding: 3%;
+}
+
+.btn_container {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+
+/* button styling */
+button {
+    font-size: 1.5rem;
+    padding: 5px 5px;
+    border: #6A2C1C 2px solid;
+    background-color: white;
+    color: #6A2C1C;
+    font-weight: 500;
+    cursor: pointer;
 }
