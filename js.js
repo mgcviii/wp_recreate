@@ -60,13 +60,13 @@ function showBike(bike) {
     .querySelector("img")
     .setAttribute(
       "src",
-      bike._embedded["wp:featuredmedia"][0].media_details.sizes.medium_large
+      bike._embedded["wp:featuredmedia"][0].media_details.sizes.full
         .source_url
     );
 
-  // GRAB PARENT
+  // grab parent
   const parent = document.querySelector(".productlist_container");
 
-  // APPEND
+  // append
   parent.appendChild(copy);
 }
