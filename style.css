@@ -20,24 +20,38 @@ img {
 
 /* Layout */
 
-.wrapper {
-    margin-top: 1%;
+main {
+    margin-top: 2%;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .breadcrumbscontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    flex-wrap: wrap;
 }
+
+/* .productlist_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+} */
 
 .productlist_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
-    /* justify-content: center; */
-    grid-column-gap: 3%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 2%;
     grid-row-gap: 5%;
+    /* justify-content: space-around; */
+}
+
+.filtercontainer,
+.productlist_container {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .productCard {
@@ -55,9 +69,20 @@ h1,
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1.bikestock {
+    font-size: 1.25rem;
+    font-weight: 800;
+    display: inline;
+    background: black;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
 p,
 .brandname1 {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
 }
 
 .label {
@@ -73,6 +98,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #6A2C1C;
 }
 
 .bcText,
@@ -129,3 +155,15 @@ button {
     font-weight: 500;
     cursor: pointer;
 }
+
+.colourBox {
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    margin: 0px 6px;
+}
+
+
+/* Desktop */
+
+/* @media only screen and (min-width: 900px) {
