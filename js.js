@@ -39,7 +39,7 @@ function showBike(bike) {
   // in_stock
   copy.querySelector(".stock").textContent = bike.in_stock;
 
-  //   color
+  //   Adding the selections color
 
   const colorArray = bike.colour;
 
